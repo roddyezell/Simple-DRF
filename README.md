@@ -1,10 +1,10 @@
 Installing Django, DRF, and initializing the project/apps
 
-pip install django
-pip install djangorestframework
-django-admin startproject drf
-django-admin startapp base
-django-admin startapp api
+    pip install django
+    pip install djangorestframework
+    django-admin startproject drf
+    django-admin startapp base
+    django-admin startapp api
 
 The base app is where models will be defined
 
