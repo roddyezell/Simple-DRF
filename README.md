@@ -105,6 +105,12 @@ Next, create an endpoint to facilitate POST requests. Go back to api/views.py an
             serializer.save()
         return Response(serializer.data)
 
-    Update api/urls.py to include path('add/', views.addItem)
+Update api/urls.py to include path('add/', views.addItem)
 
-Going to http://127.0.0.1:8000/add/ will display the UI to submit a POST request. Try it (remember that “name” was defined as a character field in the Item model)
+Going to http://127.0.0.1:8000/add/ will display the UI to submit a POST request. Test by posting a JSON object:
+
+    {
+        "name" : "Item created from POST request"
+    }
+
+Remember that “name” was defined as our character field in the Item model.
